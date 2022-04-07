@@ -32,7 +32,7 @@ export const drawHand: Function = (predictions: any, ctx: CanvasRenderingContext
           ctx.beginPath();
           ctx.moveTo(landmarks[firstJointIndex][0], landmarks[firstJointIndex][1]);
           ctx.lineTo(landmarks[secondJointIndex][0], landmarks[secondJointIndex][1]);
-          ctx.strokeStyle = '#ebb434';
+          ctx.strokeStyle = '#34eb37';
           ctx.lineWidth = 2;
           ctx.stroke();
         }
@@ -43,7 +43,7 @@ export const drawHand: Function = (predictions: any, ctx: CanvasRenderingContext
 
         ctx.beginPath();
         ctx.arc(x, y, 5, 0, 2 * Math.PI);
-        ctx.fillStyle = '#ff0000';
+        ctx.fillStyle = '#eb3434';
         ctx.fill();
       });
     });
